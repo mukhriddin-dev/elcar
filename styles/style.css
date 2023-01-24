@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 
-:root{
+:root {
     --bg-main-color: #0A0A0B;
     --text-main-color: #ffffff;
     --btn-bg-color: #306AD9;
@@ -15,10 +15,159 @@
     --icon-color: #BABEC4;
 }
 
-body{
+body {
     font-family: 'Exo regular';
     color: var(--text-main-color);
     background-color: var(--bg-main-color);
+    overflow-x: hidden;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+/* ------------------------- header started ------------------- */
+header {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav__list--item {
+    list-style-type: none;
+}
+
+.nav__list--item-link {
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+
+.nav__list--item-link:hover {
+    color: var(--icon-color);
+}
+
+.active {
+    text-shadow: 0px 0px 32px #346DDA;
+    color: var(--btn-bg-color-hover);
+}
+
+/* ------------------------- header finished ------------------- */
+
+.intro {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.intro::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -138px;
+    top: -128px;
+    background: rgba(55, 74, 109, 0.5);
+    filter: blur(90px);
+}
+
+.intro::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -20px;
+    top: 404px;
+    background: rgba(55, 74, 109, 0.5);
+    filter: blur(90px);
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.intro__title {
+    font-family: 'Exo semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 72px;
+}
+
+.intro__subtitle {
+    font-family: 'Exo semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.wrapper span {
+    font-family: 'Exo regular';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 8px;
+    display: block;
+    color: var(--icon-color);
+}
+
+.intro__car {
+    margin-top: 48px;
+}
+
+.intro__info {
+    width: 406px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+    height: 104px;
+}
+
+.intro__start {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 91px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #02DB8A;
+    filter: drop-shadow(0px 0px 16px #02DB8A);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.intro__start h2 {
+    border: 2px solid #02DB8A;
+    width: 70px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.intro__start:hover h2 {
+    filter: drop-shadow(0px 0px 16px #02DB8A);
+}
