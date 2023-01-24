@@ -68,6 +68,8 @@ header {
 
 /* ------------------------- header finished ------------------- */
 
+/* ----------------------- intro start -------------------- */
+
 .intro {
     width: 100%;
     height: auto;
@@ -171,3 +173,5 @@ header {
 .intro__start:hover h2 {
     filter: drop-shadow(0px 0px 16px #02DB8A);
 }
+
+/* ----------------------- intro end -------------------- */
